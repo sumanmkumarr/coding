@@ -16,7 +16,7 @@ int main()
     {
         if(arr[i]>0){
              char t=i;;
-            cout<<t<<" "<<arr[i];
+            cout<<t<<" "<<arr[i]<<" ";
         }
     }
     return 0;
