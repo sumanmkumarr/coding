@@ -1,4 +1,7 @@
 // find max element of every three length subarry of given array
+// subarray -- it is all possible contiguous part of an array
+// subsequence -- it is all possible contiguous and non contiguous part of an array
+
 
 #include<iostream>
 #include<bits/stdc++.h>
