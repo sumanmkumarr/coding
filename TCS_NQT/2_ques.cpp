@@ -1,4 +1,4 @@
-// at prime index pow(2,i)  , at perfect square index pow(3,j)  , at other index sum of previous term should be
+// find out series so that at prime index pow(2,i)  , at perfect square index pow(3,j)  , at other index sum of previous two term should be
 
 #include<iostream>
 #include<bits/stdc++.h>
