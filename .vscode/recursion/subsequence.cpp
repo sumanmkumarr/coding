@@ -12,13 +12,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void subsequence(int index,int arr[],vector<int>& brr,int n)
+void subsequence(int index,int arr[],vector<int> &brr,int n)
 {
     if(index==n)
     {
-        for(int i=0;i<n;i++)
+        for(auto it :brr)
         {
-            cout<<brr[i];
+            cout<<it<<" ";
         }
         cout<<endl;
         return;
