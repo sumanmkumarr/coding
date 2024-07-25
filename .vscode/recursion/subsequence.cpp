@@ -7,7 +7,7 @@
 
 // if 6 is there in any subsequence then it should be before 1 and after 2,4 only 
 
-
+// time complexity of subsequence is N(2^N)
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -23,10 +23,14 @@ void subsequence(int index,int arr[],vector<int> &brr,int n)
         cout<<endl;
         return;
     }
+
+    // this is pick condition
     brr.push_back(arr[index]);
 
     subsequence(index+1,arr,brr,n);
+    
 
+    // this is not pick condition
     brr.pop_back();
     subsequence(index+1,arr,brr,n);
 
