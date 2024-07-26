@@ -16,7 +16,7 @@ void subsequence_sum(int i,vector<int> &arr,int brr[],int n,int k)
         }
         // cout<<"\n";
         
-        if(sum==k && t==0)
+        if(sum==k)
         {
             cout<<"that subsequence is present and subsequence is ";
             for(auto it:arr)
