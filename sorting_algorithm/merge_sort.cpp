@@ -2,7 +2,8 @@
 using namespace std;
 #include<bits/stdc++.h>
 
-// time complexity of merge sort is O(N*LOG(N))
+// time complexity of merge sort is O(N*LOG(N)) in every case
+// merge sort take extra space ,this is disadvantage of merge sort
 //space complexity of merge sort is O(N)
 
 
