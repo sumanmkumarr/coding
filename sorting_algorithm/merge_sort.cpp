@@ -2,20 +2,27 @@
 using namespace std;
 #include<bits/stdc++.h>
 
-void mergesort(int arr[],int low,int high)
+
+// when size of array is known then we use cin to take input from user in vector 
+// when size of array is not known then we use push_back to take input from user
+void merge_arr(vector<int>&arr,int low,int mid,int high);
+
+void mergesort(vector<int>&arr,int low,int high)
 {
-    int mid=(low+high)/2;
+   
     if(low==high)
     {
         return;
     }
+
+    int mid=(low+high)/2;
     mergesort(arr,low,mid);
     mergesort(arr,mid+1,high);
-    merge(arr,low,mid,high);
+    merge_arr(arr,low,mid,high);
 
 }
 
-void merge(int arr[],int low,int mid,int high)
+void merge_arr(vector<int>&arr,int low,int mid,int high)
 {
     vector<int>temp;
 
@@ -48,17 +55,28 @@ void merge(int arr[],int low,int mid,int high)
         right++;
     }
 
-    for(int i=low;i<high;i++)
+    for(int i=low;i<=high;i++)
     {
-        arr[i]=temp[low];
+        arr[i]=temp[i-low];
     }
 }
 int main()
 {
     int n;
     cin>>n;
-    int arr[n];
+    vector<int> arr(n);
+
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+
     mergesort(arr,0,n-1);
+
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i];
+    }
 
 
 }
