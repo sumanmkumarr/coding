@@ -2,6 +2,9 @@
 using namespace std;
 #include<bits/stdc++.h>
 
+// time complexity of merge sort is O(N*LOG(N))
+//space complexity of merge sort is O(N)
+
 
 // when size of array is known then we use cin to take input from user in vector 
 // when size of array is not known then we use push_back to take input from user
