@@ -27,7 +27,7 @@ void sequence_sum(int ind,vector<int> &brr,int arr[],int k,int n)
     if(arr[ind]<=k)
     {
          brr.push_back(arr[ind]);
-         sequence_sum(ind+1,brr,arr,k-arr[ind],n);
+         sequence_sum(ind,brr,arr,k-arr[ind],n);
          brr.pop_back();
     }
 
