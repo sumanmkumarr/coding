@@ -3,7 +3,7 @@ using namespace std;
 
 
 
-// container
+// container -- pair,vector
 
 //pair
 void explain_pair()
@@ -48,6 +48,8 @@ void explain_vector()
     // how to increse  size of vector after declaring the size of vector also
     vector<int>e(7);
     e.push_back(2);// now size of vector e is 8 because one more element we inserted that is 2
+
+    //17:00
 }
 
 
