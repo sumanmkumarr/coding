@@ -51,7 +51,7 @@ void explain_iterator()
 
     cout<<endl;
     //
-    for(auto i:v)// here auto is int datatype
+    for(auto i:v)// here auto is used for int datatype
     {
         cout<<i<<" ";
     }
