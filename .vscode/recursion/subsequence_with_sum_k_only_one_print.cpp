@@ -14,7 +14,7 @@ void only_once_print(int i,vector<int>arr,int brr[],int n,int k)
         //cout<<endl;
         if(sum==k)
         {
-            no=no+1;
+            //no=no+1;
             for(auto w:arr)
             {
                 cout<<w<<" ";

@@ -1,6 +1,6 @@
 // print all sequence with sum is equal to k and condition is any sequence only one time any index is used  i.e print subsequence with sum is equal to k
 
-// for sorting the we can use this prebuilt function also
+// for sorting the vector we can use this prebuilt function also
 // sort(array_name.begin(),array_name.end())
 
 
