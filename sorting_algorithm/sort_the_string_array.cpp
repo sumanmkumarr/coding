@@ -11,6 +11,8 @@ int main()
     v.push_back("asde");
     v.push_back("abcrd");
     v.push_back("AB");
+    v.push_back("qwabccf");
+    v.push_back("ABCDE");
     sort(v.begin(),v.end());
     int t=v.size();
     for(int i=0;i<t;i++)
