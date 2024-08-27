@@ -1,5 +1,5 @@
 // print all possible substring
-// substring - it is continuous part of string in order
+// substring - it is continuous part of string in order(in sequencially only we can pick the element)
 #include<bits/stdc++.h>
 using namespace std;
 
