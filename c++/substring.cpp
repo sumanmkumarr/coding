@@ -5,14 +5,14 @@ using namespace std;
 
 int main()
 {
-    string str;
-    cin>>str;
-    for(int i=0;i<str.size();i++)
+    string str1;
+    cin>>str1;
+    for(int i=0;i<str1.size();i++)
     {
           string s="";
-          for(int j=i;j<str.size();j++)
+          for(int j=i;j<str1.size();j++)
           {
-             s=s+str[j];
+             s=s+str1[j];
              cout<<s<<" ";
           }
           cout<<endl;
