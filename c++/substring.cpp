@@ -15,6 +15,6 @@ int main()
              s=s+str1[j];
              cout<<s<<" ";
           }
-          cout<<"\n";
+          cout<<endl;
     }
 }
