@@ -43,4 +43,16 @@ int main()
      cout<<temp->data<<" ";
      temp=temp->next;
    }
+   cout<<endl;
+
+
+   // length of ll
+   node* temp2=head;
+   int l=0;
+   while(temp2)
+   {
+      l=l+1;
+      temp2=temp2->next;
+   }
+   cout<<l<<endl;
 }
