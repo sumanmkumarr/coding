@@ -55,4 +55,18 @@ int main()
       temp2=temp2->next;
    }
    cout<<l<<endl;
+
+
+
+   // search in ll
+   node* temp3=head;
+   while(temp3)
+   {
+     if(temp3->data==2)
+     {
+        cout<<"yes"<<endl;
+        break;
+     }
+     temp3=temp3->next;
+   }
 }
