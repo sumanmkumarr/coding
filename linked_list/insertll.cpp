@@ -159,6 +159,6 @@ int main()
     // cout<<endl;
 
     // insert value before specific number
-    head=insertbefore(head,100,6);
+    head=insertbefore(head,100,12);
     print(head);
 }
