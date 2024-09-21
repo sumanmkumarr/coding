@@ -60,6 +60,29 @@ node *deleteh(node *head)
 
     return head;
 }
+
+
+
+
+// delete the tail of doubly linked list
+node *deletet(node *head)
+{
+    node *temp=head;
+    if(temp == NULL || temp->next == NULL)
+    {
+        return NULL;
+    }
+    while(temp->next != NULL)
+    {
+        temp=temp->next;
+    }
+    node *prev=temp->back;
+    temp->back=nullptr;
+    prev->next=nullptr;
+    free(temp);
+    return head;
+}
+
 int main()
 {
     vector<int>arr={4,9,6,2,9,4,2};
@@ -71,6 +94,11 @@ int main()
 
     // delete the head
     head=deleteh(head);
+    print(head);
+    cout<<endl;
+
+    // delete the tail 
+    head=deletet(head);
     print(head);
 
 }
