@@ -83,6 +83,46 @@ node *deletet(node *head)
     return head;
 }
 
+
+
+
+//delete the kth element of doubly linked list
+node *deletek(node *head,int k)
+{
+    node *temp=head;
+    if(temp == NULL)
+    {
+        return NULL;
+    }
+    if(k==1)
+    {
+        head=head->next;
+        head->back=nullptr;
+        temp->next=nullptr;
+        free(temp);
+        return head;
+    }
+
+    int c=0;
+    while(temp)
+    {
+        c=c+1;
+        if(c==k)
+        {
+            node *prev=temp->back;
+            node *front=temp->next;
+            prev->next=front;
+            front->back=prev;
+            temp->next=nullptr;
+            temp->back=nullptr;
+            free(temp);
+            break;
+        }
+        temp=temp->next;
+    }
+    return head;
+}
+
 int main()
 {
     vector<int>arr={4,9,6,2,9,4,2};
@@ -100,5 +140,11 @@ int main()
     // delete the tail 
     head=deletet(head);
     print(head);
+    cout<<endl;
+
+    // delete the k th element
+    head=deletek(head,4);
+    print(head);
+
 
 }
