@@ -143,7 +143,7 @@ int main()
     cout<<endl;
 
     // delete the k th element
-    head=deletek(head,4);
+    head=deletek(head,5);
     print(head);
 
 
