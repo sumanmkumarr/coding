@@ -86,7 +86,7 @@ vector<int> topological_sort(vector<vector<int>> &adj)
 }
 int main()
 {
-     vector<vector<int>> adj = {{},{},{3},{1},{0,1},{0,2}};
+     vector<vector<int>> adj = {{1},{2},{1},{0}};
      vector<int> topo = topological_sort(adj);
      for(auto itr:topo)
      {
